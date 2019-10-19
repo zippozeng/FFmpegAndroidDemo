@@ -27,7 +27,7 @@
 
 #define leLogE(module_tag, bLoggerFlag, fmt, ...)                                                      \
     if( (NULL!= module_tag) && (true == bLoggerFlag))                      \
-    {                                                                                                        \
+    {                                                                            \
         __android_log_print(ANDROID_LOG_ERROR,TAG_BASE,"[%s:%u] "fmt, module_tag,  __LINE__, ##__VA_ARGS__);      \
     }                                                                                                        \
 
